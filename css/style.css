@@ -30,6 +30,10 @@ a {
     text-decoration: none;
 }
 
+.none {
+    display: none;
+}
+
 
 /* header========================== */
 
@@ -81,6 +85,8 @@ a {
 
 .welcome__leafs {
     padding-top: 62px;
+    overflow: hidden;
+    width: 100%;
 }
 
 .welcome__wrapper {
@@ -151,13 +157,12 @@ a {
 
 
 .about__text {
-    max-width: 605px;
+    width: 605px;
 }
 
 .about__title {
     padding-top: 161px;
     margin-bottom: 40px;
-    max-width: 464px;
     font-family: 'Inika', serif;
     font-weight: 400;
     font-size: 40px;
@@ -356,7 +361,7 @@ a {
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
-    width: 452px;
+    text-align: end;
 }
 
 .contact {
@@ -407,7 +412,7 @@ a {
 }
 
 .contact_us__wrapper {
-    height: 550px;
+    min-height: 550px;
     position: relative;
     
 }
@@ -465,3 +470,168 @@ a {
     display: flex;
     gap: 20px;
 }
+
+
+
+/* media============================================== */
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        max-width: 768px;
+        padding: 0 50px;
+    }
+
+    .header {
+        height: 117px;
+    }
+
+    .welcome__wrapper {
+        flex-direction: row-reverse;
+    }
+
+    .welcome__leafs {
+        width: 280px;
+        height: auto;
+        padding-top: 40px;
+    }
+
+    .leafs {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .welcome__text {
+        width: 346px;
+
+    }
+
+    .welcome__title { 
+    font-size: 35px;
+    padding-top: 40px;
+    }
+
+    .welcome__description {
+        font-size: 16px;
+        padding-top: 30px;
+        line-height: 25px;
+    }
+
+    .welcome__button {
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+/* about================================ */
+
+    .about__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 95px;
+        
+        
+    }
+
+    .about__text {
+        width: 668px;
+    }
+
+    .about__title {
+        text-align: center;
+        padding-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .about__img {
+        width: 250px;
+        padding-top: 40px;
+        
+    }
+        
+/* service====================== */
+
+    .service__head {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 60px;
+    }
+
+    .service__title {
+        font-size: 35px;
+        line-height: 46px;
+    }
+
+    .service__button-block {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .service__cards {
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+
+    .service__card-item {
+        width: 281px;
+        margin-bottom: 38px;
+    }
+
+    .card__img {
+        width: 281px;
+    }
+
+    .card__text {
+        text-align: center;
+    }
+
+    /* prices====================== */
+    .price__wrapper {
+        padding-bottom: 88px;
+    }
+    .price__left-title {
+        font-size: 35px;
+    }
+
+    .price__right-title {
+        font-size: 25px;
+        margin-top: 100px;
+    }
+
+    .price__leafs {
+        width: 152px;
+    }
+
+
+/* contactus================= */
+
+.contact_us__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__accordion {
+    position: static;
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+
+.contact_woman {
+    position: static;
+}
+
+.contact_woman img {
+    width: 200px;
+}
+
+/* footrer====================== */
+
+.footer__wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+
+
