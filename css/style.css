@@ -54,6 +54,22 @@ a {
     padding-top: 42px;
 }
 
+.burger__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    display: none;
+    
+}
+
+.burger_line {
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background-color: #717171;
+    
+}
+
 .nav__list {
     display: flex;
 }
@@ -303,9 +319,6 @@ a {
     justify-content: space-between;
 }
 
-.price__left {
-    
-}
 
 .price__left-title {
     font-family: 'Inter', sans-serif;
@@ -412,7 +425,6 @@ a {
 }
 
 .contact_us__wrapper {
-    min-height: 550px;
     position: relative;
     
 }
@@ -633,5 +645,141 @@ a {
     gap: 16px;
 }
 
+}
 
 
+/* media 380px ================================ */
+@media (max-width: 414px) {
+    .container {
+        width: 380px;
+        padding: 0 25px;
+    }
+    .nav {
+        display: none;
+    }
+    
+    .burger__menu {
+        display: flex;
+    }
+
+    .welcome__wrapper {
+        flex-direction: column-reverse;
+    }
+    .welcome__title {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .welcome__description {
+        padding-top: 20px;
+    }
+
+    .welcome__button {
+        margin-top: 20px;
+        margin-bottom: 24px;
+        width: 100px;
+        font-size: 10px;
+    }
+
+    .welcome__leafs {
+        display: none;
+    }
+
+    /* about============================================= */
+
+    .about__title {
+        line-height: 32px;
+        font-size: 25px;
+        margin-bottom: 21px;
+    }
+
+    .about__description {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .about__text {
+        width: 330px;
+    }
+
+    .about__img {
+        padding-top: 0;
+        width: 150px;
+    }
+
+    .about__wrapper {
+        padding-bottom: 21px;
+    }
+
+    /* service========================================= */
+
+    .service__head {
+        padding-top: 30px;
+    }
+
+    .service__title {
+        font-size: 25px;
+        width: 187px;
+        line-height: 33px;
+    }
+
+    .service__button-block {
+        margin-top: 35px;
+    }
+
+    .service-btn {
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+        line-height: 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .service__cards {
+        justify-content: center;
+    }
+
+    /* price======================================= */
+    
+    .price__wrapper {
+        flex-direction: column;
+        padding-top: 25px
+    }
+
+    .price__left-title {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+
+    .price__right {
+        align-items: center;
+    }
+
+    .price__leafs {
+        display: none;
+    }
+
+    .price__right-title {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    /* contact=================================== */
+
+    .contact__accordion {
+        width: 300px;
+        height: 50px;
+        margin-top: 80px;
+        margin-bottom: 132px;
+    }
+
+    .contact_woman img {
+        width: 100px;
+        height: 124px;
+    }
+    
+}
